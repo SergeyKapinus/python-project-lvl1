@@ -24,6 +24,3 @@ def get_integer():
 
 def get_answer():
     return prompt.string('Yuor answer: ')
-
-
-

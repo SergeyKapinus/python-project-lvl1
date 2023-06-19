@@ -24,6 +24,7 @@ def play_even():
         i += 1
     return print(f'Congratulations, {name}!')
 
+
 def main():
     play_even()
 

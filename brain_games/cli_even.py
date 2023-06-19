@@ -15,6 +15,8 @@ def get_discription(name):
         print('Answer "yes" if the number is even, otherwise answer "no".')
     if name == 'calc':
         print('What is the result of the expression?')
+    if name == 'gcd':
+        print('Find the greatest common divisor of given numbers.')
 
 
 def is_even(number):
@@ -40,3 +42,12 @@ def calc(a, operator, b):
         return str(a - b)
     if operator == '*':
         return str(a * b)
+    
+
+def gcd(m, n):
+    while m != n:
+        if m > n:
+            m = m - n
+        else:
+            n = n - m
+    return str(n)

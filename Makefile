@@ -1,3 +1,4 @@
+
 install:
 	poetry install
 
@@ -12,6 +13,9 @@ brain-calc:
 
 brain-gcd:
 	poetry run brain-gcd
+
+brain-progression:
+	poetry run brain-progression
 
 build:
 	poetry build

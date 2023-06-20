@@ -22,3 +22,11 @@ def play_gcd():
             return print(f"'{str(answer)}' is wrong answer ;(. Correct answer was '{gcd(a, b)}'.\nLet's try again, {name}!")
         i += 1
     return print(f'Congratulations, {name}!')
+
+
+def main():
+    play_gcd()
+
+
+if __name__ == '__main__':
+    main()

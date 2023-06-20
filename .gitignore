@@ -3,3 +3,6 @@ dist/
 *.pyc
 .venv/
 *.swp
+.gitignore6
+brain_games.py.save
+nano.save

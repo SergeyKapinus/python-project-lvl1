@@ -17,6 +17,8 @@ def get_discription(name):
         print('What is the result of the expression?')
     if name == 'gcd':
         print('Find the greatest common divisor of given numbers.')
+    if name == 'progression':
+        print('What number is missing in the progression?')
 
 
 def is_even(number):
@@ -42,7 +44,7 @@ def calc(a, operator, b):
         return str(a - b)
     if operator == '*':
         return str(a * b)
-    
+
 
 def gcd(m, n):
     while m != n:
@@ -51,3 +53,22 @@ def gcd(m, n):
         else:
             n = n - m
     return str(n)
+
+
+def get_range():
+    numbers = range(0, 50, random.randint(2, 5))
+    for i in numbers:
+        l = list(numbers)
+    return l
+
+
+def get_progression(l):
+    l_copy = l.copy()
+    i_random = random.randint(0, len(l_copy)-1)
+    l_copy.pop(i_random)
+    l_copy.insert(i_random, '..')
+    return l_copy
+
+
+def get_string(l):
+    return ' '.join(map(str, l))

@@ -9,7 +9,7 @@ def play_even():
     greet_hello()
     name = get_name()
     print(f'Hello, {name}!')
-    get_discription()
+    get_discription('even')
     i = 1
     while i <= 3:
         number = get_integer()

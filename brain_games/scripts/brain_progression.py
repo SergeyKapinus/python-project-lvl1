@@ -35,26 +35,46 @@ def get_range():
     return l
 
 def get_progression(l):
-    i_random = random.randint(0, len(l)-1)
-    l.pop(i_random)
-    l.insert(i_random, '..')
-    return l
-
-# def play_progression():
-#     greet_hello()
-#     name = get_name()
-#     print(f'Hello, {name}!')
-#     get_discription('progression')
-#     i = 1
-#     while i <= 3:
+    l_copy = l.copy()
+    i_random = random.randint(0, len(l_copy)-1)
+    l_copy.pop(i_random)
+    l_copy.insert(i_random, '..')
+    return l_copy
 
 def get_string(l):
     return ' '.join(map(str, l))
 
-print(get_range())
-print(get_progression(get_range()))
-string = get_string(get_progression(get_range()))
-print(string)
+def play_progression():
+    greet_hello()
+    name = get_name()
+    print(f'Hello, {name}!')
+    get_discription('progression')
+    i = 1
+    while i <= 3:
+        range = get_range() # список последовательности
+        progression = get_progression(range) # список последовательности с '..'
+        str_progression = get_string(progression) # строка последовательности
+        print(f'Question: {str_progression}')
+        answer = get_answer()
+        index = progression.index('..')
+        if int(answer) == range[index]:
+            print('Correct!')
+        else:
+            return print(f"'{str(answer)}' is wrong answer ;(. Correct answer was '{range[index]}'.\nLet's try again, {name}!")
+        i += 1
+    return print(f'Congratulations, {name}!')
+
+
+print(play_progression())
+
+
+
+
+
+# print(get_range())
+# print(get_progression(get_range()))
+# string = get_string(get_progression(get_range()))
+# print(string)
 
 
 

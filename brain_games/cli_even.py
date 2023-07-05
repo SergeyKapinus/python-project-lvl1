@@ -59,7 +59,7 @@ def get_range():
     numbers = range(0, 50, random.randint(2, 5))
     for i in numbers:
         list_numbers = list(numbers)
-    return l
+    return list_numbers
 
 
 def get_progression(list_numbers):

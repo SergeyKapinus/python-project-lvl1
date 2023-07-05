@@ -1,6 +1,6 @@
-
 import random
 import prompt
+import math
 
 
 def greet_hello():
@@ -78,9 +78,14 @@ def get_string(list_numbers):
 
 
 def is_prime(number):
-    d = 2
-    if number == 1:
+    if number < 2:
         return False
-    while number % 2 != 0:
-        d += 1
-    return d == number
+    if number == 2:
+        return True
+    limit = math.sqrt(number)
+    i = 2
+    while i <= limit:
+        if number % i == 0:
+            return False
+        i += 1
+    return True

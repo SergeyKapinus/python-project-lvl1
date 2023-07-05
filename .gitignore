@@ -4,5 +4,5 @@ dist/
 .venv/
 *.swp
 .gitignore6
-brain_games.py.save
-nano.save
+*.save
+*.save.1

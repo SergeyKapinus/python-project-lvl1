@@ -1,3 +1,4 @@
+
 import random
 import prompt
 
@@ -19,6 +20,8 @@ def get_discription(name):
         print('Find the greatest common divisor of given numbers.')
     if name == 'progression':
         print('What number is missing in the progression?')
+    if name == 'prime'
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def is_even(number):
@@ -30,7 +33,7 @@ def get_integer():
 
 
 def get_answer():
-    return prompt.string('Yuor answer: ')
+    return prompt.string('Your answer: ')
 
 
 def get_operator():
@@ -72,3 +75,12 @@ def get_progression(list_numbers):
 
 def get_string(list_numbers):
     return ' '.join(map(str, list_numbers))
+
+
+def is_prime(number):
+    d = 2
+    if numbers == 1:
+        return False
+    while n % 2 != 0:
+        d += 1
+    return d == n

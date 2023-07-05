@@ -9,15 +9,15 @@ def play_prime():
     greet_hello()
     name = get_name()
     print(f'Hello, {name}!')
-    get_discription()
+    get_discription('prime')
     i = 1
     while i <= 3:
-        numbers = get_integer()
-        print(f'Question: {numbers}')
+        number = get_integer()
+        print(f'Question: {number}')
         answer = get_answer()
-        if is_prime(numbers) and answer == 'yes' or not is_prime(numbers) and answer == 'no':
+        if is_prime(number) and answer == 'yes' or not is_prime(number) and answer == 'no':
             print('Correct!')
-        elif is_prime(numbers) and answer == 'no':
+        elif is_prime(number) and answer == 'no':
             return print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
         else:
             return print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")

@@ -20,7 +20,7 @@ def get_discription(name):
         print('Find the greatest common divisor of given numbers.')
     if name == 'progression':
         print('What number is missing in the progression?')
-    if name == 'prime'
+    if name == 'prime':
         print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
@@ -79,8 +79,8 @@ def get_string(list_numbers):
 
 def is_prime(number):
     d = 2
-    if numbers == 1:
+    if number == 1:
         return False
-    while n % 2 != 0:
+    while number % 2 != 0:
         d += 1
-    return d == n
+    return d == number

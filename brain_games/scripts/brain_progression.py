@@ -18,7 +18,7 @@ def play_progression():
         print(f'Question: {str_progression}')
         answer = get_answer()
         index = progression.index('..')
-        if answer ==str(range[index]):
+        if answer == str(range[index]):
             print('Correct!')
         else:
             return print(f"'{str(answer)}' is wrong answer ;(. Correct answer was '{range[index]}'.\nLet's try again, {name}!")

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 
-from brain_games.cli_even import greet_hello, get_name, get_discription, greet_hello_user
-from brain_games.cli_even import get_answer, get_range, get_progression, get_string
+from brain_games.games.cli import greet_hello, get_name, greet_hello_user, get_discription, get_answer
+from brain_games.games.game_progression import get_range, get_progression, get_string
 
 
 def play_progression(name):

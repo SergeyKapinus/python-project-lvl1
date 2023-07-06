@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 
-from brain_games.cli_even import greet_hello, get_name, get_discription
-from brain_games.cli_even import get_integer, get_answer, gcd, greet_hello_user
+from brain_games.games.cli import greet_hello, get_name, greet_hello_user, get_discription, get_answer
+from brain_games.games.game_gcd import gcd
+from brain_games.games.getting_integer import get_integer
 
 
 def play_gcd(name):

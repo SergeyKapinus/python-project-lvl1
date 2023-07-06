@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from brain_games.cli_even import greet_hello, get_name, get_discription,
+from brain_games.cli_even import greet_hello, get_name, get_discription
 from brain_games.cli_even import is_even, get_integer, get_answer, greet_hello_user
 
 

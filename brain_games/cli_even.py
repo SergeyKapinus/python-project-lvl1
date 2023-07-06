@@ -11,6 +11,10 @@ def get_name():
     return prompt.string('May I have your name? ')
 
 
+def greet_hello_user(name):
+    print(f'Hello, {name}!')
+
+
 def get_discription(name):
     if name == 'even':
         print('Answer "yes" if the number is even, otherwise answer "no".')

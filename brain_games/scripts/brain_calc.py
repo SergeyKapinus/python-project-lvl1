@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 
 
-from brain_games.cli_even import greet_hello, get_name, get_discription
+from brain_games.cli_even import greet_hello, get_name, get_discription, greet_hello_user
 from brain_games.cli_even import get_integer, get_answer, get_operator, calc
 
 
-def play_calc():
-    greet_hello()
-    name = get_name()
-    print(f'Hello, {name}!')
-    get_discription('calc')
+def play_calc(name):
     i = 1
     while i <= 3:
         a = get_integer()
@@ -26,7 +22,11 @@ def play_calc():
 
 
 def main():
-    play_calc()
+    greet_hello()
+    name = get_name()
+    greet_hello_user(name)
+    get_discription('calc')
+    play_calc(name)
 
 
 if __name__ == '__main__':

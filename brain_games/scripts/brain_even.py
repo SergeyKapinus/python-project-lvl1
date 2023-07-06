@@ -6,10 +6,6 @@ from brain_games.cli_even import is_even, get_integer, get_answer, greet_hello_u
 
 
 def play_even(name):
-    # greet_hello()
-    # name = get_name()
-    # print(f'Hello, {name}!')
-    # get_discription('even')
     i = 1
     while i <= 3:
         number = get_integer()
@@ -17,12 +13,8 @@ def play_even(name):
         answer = get_answer()
         if is_even(number) and answer == 'yes' or not is_even(number) and answer == 'no':
             print('Correct!')
-        # elif is_even(number) and answer != 'yes':
         if is_even(number) and answer != 'yes':
             return print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
-            # return print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
-        # else:
-        #     return print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
         if not is_even(number) and answer != 'no':
             return print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
         i += 1

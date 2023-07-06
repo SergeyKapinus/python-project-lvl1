@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 
 
-from brain_games.cli_even import greet_hello, get_name, get_discription
+from brain_games.cli_even import greet_hello, get_name, get_discription, greet_hello_user
 from brain_games.cli_even import get_answer, get_range, get_progression, get_string
 
 
-def play_progression():
-    greet_hello()
-    name = get_name()
-    print(f'Hello, {name}!')
-    get_discription('progression')
+def play_progression(name):
     i = 1
     while i <= 3:
         range = get_range()
@@ -21,13 +17,17 @@ def play_progression():
         if answer == str(range[index]):
             print('Correct!')
         else:
-            return print(f"'{str(answer)}' is wrong answer ;(. Correct answer was '{range[index]}'.\nLet's try again, {name}!")
+            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{range[index]}'.\nLet's try again, {name}!")
         i += 1
     return print(f'Congratulations, {name}!')
 
 
 def main():
-    play_progression()
+    greet_hello()
+    name = get_name()
+    greet_hello_user(name)
+    get_discription('progression')
+    play_progression(name)
 
 
 if __name__ == '__main__':

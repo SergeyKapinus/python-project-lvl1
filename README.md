@@ -1,4 +1,4 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SergeyKapinus/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/SergeyKapinus/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/maintainability)](https://codeclimate.com/github/SergeyKapinus/python-project-lvl1//maintainability)
-https://asciinema.org/a/1WwYP3FCfP87ra5ljkhifCX1Y
+<script async id="asciicast-1WwYP3FCfP87ra5ljkhifCX1Y" src="https://asciinema.org/a/1WwYP3FCfP87ra5ljkhifCX1Y.js"></script>

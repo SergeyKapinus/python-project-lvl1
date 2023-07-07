@@ -15,4 +15,29 @@ brain-even
 ```
 [![asciicast](https://asciinema.org/a/CZpFhymc7SgQXqtiQdOPGk72Z.svg)](https://asciinema.org/a/CZpFhymc7SgQXqtiQdOPGk72Z)
 
+## Brain Calc
+```bash
+brain-calc
+```
+[![asciicast](https://asciinema.org/a/MG34cyCtrwef6VLzpeMCM9QaO.svg)](https://asciinema.org/a/MG34cyCtrwef6VLzpeMCM9QaO)
+
+## Brain GCD
+```bash
+brain-gcd
+```
+[![asciicast](https://asciinema.org/a/AbtX6QwCwSWRc7UDkJkH5wtw1.svg)](https://asciinema.org/a/AbtX6QwCwSWRc7UDkJkH5wtw1)
+
+## Brain Progression
+```bash
+brain-progression
+```
+[![asciicast](https://asciinema.org/a/Oa8mxftzkLee9kctvxr3qsYH2.svg)](https://asciinema.org/a/Oa8mxftzkLee9kctvxr3qsYH2)
+
+## Brain Prime
+```bash
+brain-prime
+```
+[![asciicast](https://asciinema.org/a/QXVk9RyLTkcqbMaOiWVAiSBN3.svg)](https://asciinema.org/a/QXVk9RyLTkcqbMaOiWVAiSBN3)
+
+
 

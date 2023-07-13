@@ -1,6 +1,9 @@
 import random
 
 
+DISCRIPTION = 'What is the result of the expression?'
+
+
 def get_operator():
     return random.choice(['+', '-', '*'])
 

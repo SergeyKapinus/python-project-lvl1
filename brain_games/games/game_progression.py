@@ -1,6 +1,9 @@
 import random
 
 
+DISCRIPTION = 'What number is missing in the progression?'
+
+
 def get_range():
     numbers = range(0, 50, random.randint(2, 5))
     for i in numbers:

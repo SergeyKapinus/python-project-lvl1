@@ -2,7 +2,7 @@
 
 
 from brain_games.games.cli import greet_hello, get_name, greet_hello_user, get_discription, get_answer
-from brain_games.games.game_progression import get_range, get_progression, get_string
+from brain_games.games.game_progression import get_range, get_progression, get_string, DISCRIPTION
 
 
 def play_progression(name):
@@ -26,7 +26,7 @@ def main():
     greet_hello()
     name = get_name()
     greet_hello_user(name)
-    get_discription('progression')
+    get_discription(DISCRIPTION)
     play_progression(name)
 
 

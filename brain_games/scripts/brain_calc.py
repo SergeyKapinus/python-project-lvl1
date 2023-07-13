@@ -2,7 +2,7 @@
 
 
 from brain_games.games.cli import greet_hello, get_name, greet_hello_user, get_discription, get_answer
-from brain_games.games.game_calc import get_operator, calc
+from brain_games.games.game_calc import get_operator, calc, DISCRIPTION
 from brain_games.games.getting_integer import get_integer
 
 
@@ -26,7 +26,7 @@ def main():
     greet_hello()
     name = get_name()
     greet_hello_user(name)
-    get_discription('calc')
+    get_discription(DISCRIPTION)
     play_calc(name)
 
 
